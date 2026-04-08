@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glm-photometry"
+version = "0.1.0"
+description = "Circular-shift permutation GLM for fiber photometry peri-event data"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Garret Stuber Lab", email = "gstuber@uw.edu"},
+]
+keywords = ["neuroscience", "fiber-photometry", "GLM", "permutation-testing", "calcium-imaging"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "scipy>=1.7",
+    "h5py>=3.0",
+    "matplotlib>=3.4",
+    "scikit-learn>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyter", "nbformat"]
+
+[tool.setuptools.packages.find]
+include = ["glm_photometry*"]
