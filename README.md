@@ -2,7 +2,7 @@
 
 Circular-shift permutation GLM for fiber photometry peri-event data.
 
-A Python framework for fitting generalized linear models to fiber photometry time series using circular-shift permutation testing for non-parametric significance evaluation. Adapted from the calcium imaging GLM described in [Hjort et al.](https://doi.org/10.1016/j.crmeth.2024.100907) for single-channel fiber photometry recordings.
+A Python framework for fitting generalized linear models to fiber photometry time series using circular-shift permutation testing for non-parametric significance evaluation.
 
 ## Overview
 
@@ -122,14 +122,6 @@ Input data should be a tidy DataFrame (loaded from HDF5 or Excel) with the follo
 - h5py >= 3.0
 - Matplotlib >= 3.4
 - scikit-learn >= 1.0 (for decoding analysis)
-
-## Citation
-
-If you use this code, please cite:
-
-Elerding et al. (in preparation). Functional characterization of VTA GABA neuron subtypes during a multi-solution taste access task.
-
-Hjort et al. (2024). Bhatt-Lab circular-shift GLM for calcium imaging. *Cell Reports Methods*, 4(12), 100907.
 
 ## License
 
